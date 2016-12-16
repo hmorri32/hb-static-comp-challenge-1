@@ -70,6 +70,7 @@ button {
 
 button img {
   height: 25px;
+  display: none;
 }
 
 .box-2 img,
