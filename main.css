@@ -29,7 +29,6 @@ p {
 
 .left-side {
   display: flex;
-  border: 1px dashed;
   height: 100vh;
   width: 60%;
   flex-wrap: wrap;
@@ -132,15 +131,15 @@ img {
 }
 
 
-@media screen and (max-width: 890px) {
+/*@media screen and (max-width: 890px) {
 
   .left-side {
-    height: 90vh;
+    height: 95vh;
   }
   .right-side {
-    height: 90vh;
+    height: 95vh;
   }
-}
+}*/
 
 @media screen and (max-width: 800px) {
   .left-side {
