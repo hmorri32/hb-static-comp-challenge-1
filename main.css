@@ -48,7 +48,6 @@ p {
 .right-side {
   height: 100vh;
   width: 40%;
-  border: 1px solid black;
   position: absolute;
   right: 0;
 }
@@ -137,4 +136,105 @@ button img {
 img {
   width: 100%;
   height: 100%;
+}
+
+
+.media-screen-img {
+  display: none;
+}
+
+
+@media screen and (max-width: 890px) {
+
+  .left-side {
+    height: 90vh;
+  }
+  .right-side {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left-side {
+    float: none;
+    height: 89vh;
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+    height: 50vw;
+  }
+  .on-load {
+    display: none;
+  }
+  .media-screen-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: -2px;
+  }
+  .buttons {
+    height: 25%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .left-side {
+    height: 70vh;
+  }
+  .buttons {
+    height: 27%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .box1 {
+      width: 100%;
+    }
+    .left-side {
+      height: 70vh;
+    }
+    .box {
+      height: 25%;
+    }
+    .box8 {
+      background-color: #0d0e13;
+    }
+    .box8 {
+      width: 100%;
+    }
+    .buttons {
+      height: 32%;
+    }
+    /*.media-screen-img {
+      margin-bottom: -1000px;
+    }*/
+    button img {
+      height: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .buttons {
+    height: 30%;
+  }
+  button img {
+    height: 15px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  button img {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  p,
+  h5 {
+    margin-bottom: 8px;
+  }
 }
