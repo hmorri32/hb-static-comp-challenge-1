@@ -1,14 +1,4 @@
 
-/*New hex list:
-
-Dark : #0d0e13
-navy #1a2d34
-stone #384848
-green ish #628078
-light #a0b1ab
-
-*/
-
 *,
 body {
   font-family: 'Nunito Sans', sans-serif;
@@ -82,13 +72,6 @@ button img {
   height: 25px;
 }
 
-.box-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #a0b1ab;
-}
-
 .box-2 img,
 .box3 img,
 .box4 img,
@@ -99,6 +82,13 @@ button img {
   margin: 0 auto;
   height: 50%;
   width: 50%;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #a0b1ab;
 }
 
 .box3,
@@ -119,8 +109,6 @@ button img {
 
 .box4 {
   background-color: #628078;
-
-  /*background-color: 	#5b5b5b;*/
 }
 
 .box5 {
@@ -132,12 +120,10 @@ button img {
   background-color: #384848;
 }
 
-
 img {
   width: 100%;
   height: 100%;
 }
-
 
 .media-screen-img {
   display: none;
@@ -177,7 +163,6 @@ img {
     height: 25%;
   }
 }
-
 
 @media screen and (max-width: 600px) {
 
