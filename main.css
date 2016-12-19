@@ -1,5 +1,7 @@
+html, body {
+  height: 100%;
+}
 
-*,
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -8,220 +10,130 @@ body {
 
 h5 {
   font-weight: 700;
-  margin-left: 11%;
-  margin-bottom: 20px;
+  line-height: 2;
+  text-transform: uppercase;
 }
 
 h3{
-  margin: 0 auto;
-  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 p {
-  margin-left: 11%;
-  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
-.all-container {
-  display: flex;
-  height: 100vh;
-}
-
-.left-side {
-  display: flex;
-  height: 100vh;
-  width: 60%;
-  flex-wrap: wrap;
-  float: left;
-}
-
-.right-side {
-  height: 100vh;
-  width: 40%;
-  position: absolute;
-  right: 0;
-}
-
-.box {
-  width: 33.3333%;
-  height: 33.3333%;
-}
-
-.box1 {
+.main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 66.6666%;
+  height: 100%;
+}
+
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
+.heading-container {
+  flex-grow: 3;
+  padding: 20px;
   background-color: #0d0e13;
 }
 
 .buttons {
-  display: flex;
-  justify-content: space-around;
-  height: 20%;
+  margin-top: 20px;
 }
 
 button {
-  width: 28%;
-  background-color: #0d0e13;
-  text-decoration: none;
+  display: inline-block;
+  min-width: 130px;
+  padding: 10px;
   border: 2px solid white;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-button img {
-  height: 25px;
-  display: none;
+button:first-child {
+  margin-right: 10px;
 }
 
-.box-2 img,
-.box3 img,
-.box4 img,
-.box5 img,
-.box6 img,
-.box7 img,
-.box8 img {
-  margin: 0 auto;
-  height: 50%;
-  width: 50%;
+.btn-sword {
+  background: url(images/swords.svg) no-repeat
 }
 
-.box-2 {
+.btn-thor {
+  background: url(images/thor.svg) no-repeat
+}
+
+.btn-sword,
+.btn-thor {
+  background-position: 10px 50%;
+  background-size: 20px;
+}
+
+.box {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.box img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.profile {
   background-color: #a0b1ab;
 }
 
-.box3,
-.box4,
-.box5,
-.box6,
-.box7,
-.box8 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.box3,
-.box7 {
+.portfolio,
+.navigation {
   background-color: #1a2d34;
 }
 
-.box4 {
+.education {
   background-color: #628078;
 }
 
-.box5 {
+.strategy {
   background-color: #0d0e13;
 }
 
-.box6,
-.box8 {
+.social,
+.fight {
   background-color: #384848;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+.fight {
+  flex-grow: 3;
+}
+
+.image-gallery {
+  flex: 1 1 auto;
+  background: url('images/ragnar3.jpg') no-repeat center;
+  background-size: cover;
 }
 
 
-.media-screen-img {
-  display: none;
-}
-
-
-/*@media screen and (max-width: 890px) {
-
-  .left-side {
-    height: 95vh;
-  }
-  .right-side {
-    height: 95vh;
-  }
-}*/
-
-@media screen and (max-width: 800px) {
-  .left-side {
-    float: none;
-    height: 89vh;
-    width: 100%;
-  }
-  .right-side {
-    width: 100%;
-    height: 50vw;
-  }
-  .on-load {
-    display: none;
-  }
-  .media-screen-img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    margin-top: -2px;
-  }
-  .buttons {
-    height: 25%;
+@media(min-width: 420px) {
+  .box {
+    flex-basis: 33.3333%;
   }
 }
 
-@media screen and (max-width: 600px) {
 
-  .left-side {
-    height: 70vh;
+@media(min-width: 900px) {
+  .main-container {
+    flex-direction: row;
   }
-  .buttons {
-    height: 27%;
+  .box {
+    flex-basis: 50%;
   }
-}
-
-@media screen and (max-width: 520px) {
-  .box1 {
-      width: 100%;
-    }
-    .left-side {
-      height: 70vh;
-    }
-    .box {
-      height: 25%;
-    }
-    .box8 {
-      background-color: #0d0e13;
-    }
-    .box8 {
-      width: 100%;
-    }
-    .buttons {
-      height: 32%;
-    }
-    /*.media-screen-img {
-      margin-bottom: -1000px;
-    }*/
-    button img {
-      height: 18px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-  .buttons {
-    height: 30%;
-  }
-  button img {
-    height: 15px;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  button img {
-    height: 15px;
-    width: 15px;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  p,
-  h5 {
-    margin-bottom: 8px;
+  .image-gallery {
+    min-width: 400px;
+    background: url('images/ragnar2.jpg') no-repeat center;
   }
 }
